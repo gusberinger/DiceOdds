@@ -17,7 +17,7 @@ function dice(times, sides) {
 	// roll a ndm dice
 	sum = 0;
 	for (let i=0; i < times; i++) {
-		sum += Math.floor(Math.random() * sides);
+		sum += Math.floor(Math.random() * sides) + 1;
 	}
 	return sum;
 }
