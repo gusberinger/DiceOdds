@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dice Odds</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Dice Odds</h1>
+
+	<div id="jumbo">
+		<form action="#">
+			<input type="text" id="form" name="valueId"/>
+			<input type="button" id="button" value="GO"/>
+			<br>
+			<input id="min"    type="radio" name="state" value="min"> Disadvantage
+			<input id="normal" type="radio" name="state" value="normal" checked> Normal
+			<input id="max"    type="radio" name="state" value="max"> Advantage
+			<br>
+		</form>
+		<div id="myDiv"></div>
+	</div>
+
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="odds.js"></script>
+
+</body>
+
+</html>
